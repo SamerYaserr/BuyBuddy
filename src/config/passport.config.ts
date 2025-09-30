@@ -20,7 +20,7 @@ passport.use(
       clientSecret: env.GOOGLE_CLIENT_SECRET,
       callbackURL: env.GOOGLE_CALLBACK_URL,
     },
-    // typed callback: the `done` (cb) signature is (err, acciunt?, info?)
+    // typed callback: the `done` (cb) signature is (err, account?, info?)
     async (
       accessToken: string,
       refreshToken: string,

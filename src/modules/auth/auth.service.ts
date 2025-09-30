@@ -187,9 +187,6 @@ class AuthService {
       );
     }
 
-    const code = generateNumericCode();
-    const hashed = await hashCode(code);
-
     // Send verification code
     await this.generateAndSendVerificationCode(
       "Verify your email",
@@ -197,7 +194,7 @@ class AuthService {
     );
 
     logger.info(
-      `New account registered ID: ${account.id}, name: ${account.name} ${account.name}`
+      `New account registered ID: ${account.id}, name: ${account.name}`
     );
     return account;
   }

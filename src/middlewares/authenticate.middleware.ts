@@ -70,7 +70,7 @@ export const authenticate: RequestHandler = async (req: Request, res, next) => {
     throw new APIError("Invalid or expired refresh token.", 401);
   }
 
-  // Check account account status and return helpful, actionable messages
+  // Check account status and return helpful, actionable messages
   if (account.status === Status.INACTIVE) {
     throw new APIError(
       "Account is inactive. Please contact support to reactivate your account.",
