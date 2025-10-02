@@ -106,6 +106,13 @@ Below are the main flows implemented end-to-end in the backend. They can be exte
 
 ---
 
+## System Design
+
+![level 1](assets/system_design_1.jpeg?raw=true "system_design_1")
+![level 2](assets/system_design_2.jpeg?raw=true "system_design_2")
+![level 3](assets/system_design_3.jpeg?raw=true "system_design_3")
+
+---
 ## ⚙️ Prerequisites
 
 - **Node.js** v18+
